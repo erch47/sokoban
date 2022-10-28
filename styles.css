@@ -1,0 +1,62 @@
+  body{
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+  }
+  
+  
+  
+  #game-window{
+    width: 900px;
+    height: 500px;
+    background-color: rgb(80, 79, 79);
+    margin: auto;
+    border: 1px solid;
+    padding: 50px 50px;
+  }
+  
+  #game-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(19,1fr);
+  }
+  
+  .W{
+    background-image: url(./images/wall.png);
+  }
+  
+  .P{
+    background-image: url(./images/character.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .B{
+    background-image: url(./images/box.png);
+  }
+  
+  
+  .G{
+    background: url(./images/goal.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .G.B{
+    background: url(./images/boxHome.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .G.P{
+    background: url(./images/character.png),url(./images/goal.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
